@@ -28,8 +28,8 @@ const setActiveButton = (lang) => {
   };
 
   const updateButtonStyles = (button, isActive) => {
-    const activeClasses = ['bg-white', 'text-slate-900', 'shadow-md'];
-    const inactiveClasses = ['text-slate-600', 'hover:text-slate-900'];
+    const activeClasses = ['text-gray-900', 'font-semibold'];
+    const inactiveClasses = ['text-gray-500', 'hover:text-gray-900'];
 
     if (isActive) {
       button.classList.add(...activeClasses);

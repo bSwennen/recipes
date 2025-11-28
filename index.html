@@ -9,16 +9,18 @@
 </head>
 
 <body>
-	<div class="fixed top-4 right-4 z-10 flex items-center justify-center gap-2 bg-slate-100 p-1.5 rounded-full w-fit">
-		<button id="home" class="px-6 py-2.5 rounded-full font-medium transition-all duration-200 text-slate-600 hover:text-slate-900" onclick="window.location.hash=''">
+	<div class="w-full max-w-screen-xl mx-auto p-4 flex justify-between items-center">
+		<button id="home" class="text-lg font-medium text-gray-500 hover:text-gray-900 transition-colors duration-300" onclick="window.location.hash=''">
 			Home
 		</button>
-		<button id="lang-en" class="px-6 py-2.5 rounded-full font-medium transition-all duration-200 text-slate-600 hover:text-slate-900">
-			English
-		</button>
-		<button id="lang-nl" class="px-6 py-2.5 rounded-full font-medium transition-all duration-200 text-slate-600 hover:text-slate-900">
-			Nederlands
-		</button>
+		<div class="flex items-center gap-4">
+			<button id="lang-en" class="text-lg font-medium text-gray-500 hover:text-gray-900 transition-colors duration-300">
+				EN
+			</button>
+			<button id="lang-nl" class="text-lg font-medium text-gray-500 hover:text-gray-900 transition-colors duration-300">
+				NL
+			</button>
+		</div>
 	</div>
 	<div id="app"></div>
 	<script type="module" src="/src/main.js"></script>
