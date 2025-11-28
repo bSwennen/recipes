@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>recipes</title>
+</head>
+
+<body>
+	<div class="fixed top-4 right-4 z-10 flex items-center justify-center gap-2 bg-slate-100 p-1.5 rounded-full w-fit">
+		<button id="home" class="px-6 py-2.5 rounded-full font-medium transition-all duration-200 text-slate-600 hover:text-slate-900" onclick="window.location.hash=''">
+			Home
+		</button>
+		<button id="lang-en" class="px-6 py-2.5 rounded-full font-medium transition-all duration-200 text-slate-600 hover:text-slate-900">
+			English
+		</button>
+		<button id="lang-nl" class="px-6 py-2.5 rounded-full font-medium transition-all duration-200 text-slate-600 hover:text-slate-900">
+			Nederlands
+		</button>
+	</div>
+	<div id="app"></div>
+	<script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

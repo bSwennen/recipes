@@ -1,0 +1,84 @@
+{
+  "translation": {
+    "homepage": {
+      "title": "Welkom bij onze Receptenverzameling!",
+      "description": "Blader door onze heerlijke recepten en vind je volgende favoriete maaltijd."
+    },
+    "ingredients": "Ingrediënten",
+    "instructions": "Instructies",
+    "servingSuggestion": "Serveersuggesties",
+    "proTip": "Pro-Tip",
+    "step": "Stap {{count}}",
+    "recipes_title": "Onze Recepten",
+    "recipes": {
+      "borscht": {
+        "title": "Borsjt",
+        "description": "Een hartige en smaakvolle bietensoep, perfect voor elk seizoen.",
+        "recipe": {
+          "ingredients": [
+            "Kleine varkensribbetjes of varkensvlees met bot",
+            "2 grote bieten",
+            "5 kleine aardappelen",
+            "1 grote ui",
+            "1 grote wortel",
+            "1/2 krop kool",
+            "3-4 el tomatenpuree",
+            "1 el suiker",
+            "1 el azijn",
+            "Zout en zwarte peper naar smaak",
+            "Verse peterselie, gehakt"
+          ],
+          "instructions": [
+            "Vlees voorbereiden: Snijd het varkensvlees in stukjes van 2 cm (indien geen ribbetjes). Doe het vlees of de ribbetjes in een grote pan, bedek met water en breng aan de kook. Laat 1-1,5 uur sudderen tot het gaar is. Als je vlees met bot gebruikt, verwijder dan de botten na het koken.",
+            "Groenten voorbereiden: Terwijl het vlees kookt, schil en bereid je de groenten voor. Rasp de helft van de bieten en snijd de andere helft in dunne reepjes. Snijd de aardappelen in grote stukken. Snipper de ui fijn. Rasp de helft van de wortel en snijd de andere helft in dunne reepjes. Snijd de kool in dunne plakjes.",
+            "De 'Zazharka' (stoof) koken: Verhit olie in een grote koekenpan op middelhoog vuur. Voeg de uien toe en bak ze goudbruin. Voeg de wortels toe en bak nog 5 minuten. Voeg de bieten toe en bak verder. Voeg na ongeveer 10 minuten de tomatenpuree, suiker en azijn toe. Bak nog 5 minuten onder af en toe roeren.",
+            "De soep samenvoegen: Voeg de aardappelen rechtstreeks toe aan de pan met het kokende vlees. Voeg het hele bieten- en wortelmengsel 'zazharka' toe aan de pan. Voeg de gesneden kool toe aan de soep.",
+            "Sudderen: Breng de soep op middelhoog vuur aan de kook en zet het vuur dan laag. Laat het ongeveer 40 minuten zachtjes sudderen, zodat de smaken zich kunnen vermengen.",
+            "Afwerking en serveren: Zet het vuur uit. Roer de verse gehakte peterselie, zout en peper naar smaak erdoor. Voor de beste smaak laat je het minstens 20-30 minuten rusten voor het opdienen."
+          ],
+          "servingSuggestion": "Serveer warm met een bijgerecht van zwart brood, verse teentjes knoflook om over het brood te wrijven en gehakte lente-uitjes. Het belangrijkste is om een flinke klodder zure room of Griekse yoghurt aan elke kom toe te voegen.",
+          "proTip": "Zoals veel stoofschotels, is Borsjt de volgende dag nog lekkerder!"
+        }
+      },
+      "progret": {
+        "title": "Progret",
+        "description": "Een lokale cakespecialiteit.",
+        "recipe": {
+          "ingredients": [
+            "Voor de cake:",
+            "  400 gr boter of margarine",
+            "  400 gr suiker",
+            "  5 eiwitten (niet opgeklopt)",
+            "  270 gr havermout",
+            "  190 gr bloem",
+            "  Enkele druppels amandelessence (optioneel)",
+            "Voor de boterroom:",
+            "  250 ml melk",
+            "  100 gr suiker",
+            "  2 koffielepels cacao",
+            "  12.5 gr puddingpoeder (of 25 gr maïzena)",
+            "  200 gr boter",
+            "  200 gr bloemsuiker (poedersuiker)"
+          ],
+          "instructions": [
+            "Cake: Verwarm de oven voor op 180°C. Meng de havermout en bloem in een kom.",
+            "Roer in een andere kom de boter romig. Voeg de suiker, de niet-opgeklopte eiwitten en (optioneel) de amandelessence toe. Meng goed.",
+            "Voeg het havermout-bloemmengsel toe aan het botermengsel en meng tot een egaal deeg.",
+            "Vet een bakvorm in en bestrooi met paneermeel.",
+            "Verdeel het deeg in een dunne laag over de bodem van de bakvorm.",
+            "Bak de cake in 15-20 minuten op 180°C, of tot hij lichtbruin en gaar is. Laat afkoelen.",
+            "Boterroom: Breng de melk met 100 gr suiker aan de kook in een steelpan.",
+            "Meng in een kommetje de cacao en het puddingpoeder (of maïzena) met een scheutje koude melk tot een glad papje.",
+            "Giet het papje bij de kokende melk en laat al roerend even doorkoken tot de pudding indikt.",
+            "Laat de pudding volledig afkoelen.",
+            "Klop in een kom de 200 gr boter romig. Voeg de bloemsuiker toe en mix goed door.",
+            "Voeg de afgekoelde pudding lepel voor lepel toe aan de boter, terwijl je blijft mixen, tot je een gladde boterroom hebt.",
+            "Afwerking: Bestrijk de afgekoelde cake met de boterroom en garneer met chocoladeschilfers."
+          ],
+          "servingSuggestion": "Perfect met een kopje koffie of thee.",
+          "proTip": "Je kunt de cake en boterroom een dag van tevoren maken. Stel de taart samen op de dag van het serveren voor de beste smaak."
+        }
+      }
+    }
+  }
+}
