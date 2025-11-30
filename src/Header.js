@@ -4,7 +4,7 @@ function Header(isHomePage) {
   return `
     <div class="w-full max-w-screen-xl mx-auto p-4 flex justify-between items-center">
       <button id="home" class="text-lg font-medium text-gray-500 hover:text-gray-900 transition-colors duration-300 ${isHomePage ? 'invisible' : ''}">
-        Home
+        ${i18next.t('home')}
       </button>
       <div class="flex items-center gap-4">
         <button id="lang-nl" class="text-lg font-medium text-gray-500 hover:text-gray-900 transition-colors duration-300">

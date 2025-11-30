@@ -9,6 +9,7 @@
     "servingSuggestion": "Serving Suggestions",
     "proTip": "Pro-Tip",
     "step": "Step {{count}}",
+    "home": "Home",
     "recipes_title": "Our Recipes",
     "recipes": {
       "borscht": {

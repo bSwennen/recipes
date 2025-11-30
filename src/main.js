@@ -5,6 +5,10 @@ import Recipe from './Recipe.js';
 import { getRecipe } from './recipes.js';
 import Header, { addHeaderListeners } from './Header.js';
 
+const updateTitle = () => {
+  document.title = i18next.t('recipes_title');
+};
+
 const renderHeader = () => {
   const header = document.querySelector('header');
   const isHomePage = window.location.hash === '';
@@ -31,7 +35,10 @@ window.addEventListener('hashchange', () => {
 
 renderHeader();
 render();
+updateTitle();
 
 i18next.on('languageChanged', (lng) => {
   render();
+  renderHeader();
+  updateTitle();
 });
