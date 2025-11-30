@@ -43,7 +43,7 @@
       },
       "progret": {
         "title": "Progret",
-        "description": "Een lokale cakespecialiteit.",
+        "description": "Perfect voor het vieren van verjaardagen.",
         "image": "/progret.png",
         "recipe": {
           "ingredients": [
@@ -78,7 +78,7 @@
             "Afwerking: Bestrijk de afgekoelde cake met de boterroom en garneer met chocoladeschilfers."
           ],
           "servingSuggestion": "Perfect met een kopje koffie of thee.",
-          "proTip": "Je kunt de cake en boterroom een dag van tevoren maken. Stel de taart samen op de dag van het serveren voor de beste smaak."
+          "proTip": "Om de smaken goed te laten ontwikkelen, kan de cake het beste een paar dagen van tevoren worden gemaakt."
         }
       }
     }

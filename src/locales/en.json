@@ -43,7 +43,7 @@
       },
       "progret": {
         "title": "Progret",
-        "description": "A local cake speciality.",
+        "description": "Perfect for celebrating birthdays.",
         "image": "/progret.png",
         "recipe": {
           "ingredients": [
@@ -78,7 +78,7 @@
             "Finishing: Spread the buttercream over the cooled cake and garnish with chocolate shavings."
           ],
           "servingSuggestion": "Perfect with a cup of coffee or tea.",
-          "proTip": "You can make the cake and buttercream a day in advance. Assemble the cake on the day of serving for the best taste."
+          "proTip": "To allow the flavours to develop the cake should be made a couple of days ahead"
         }
       }
     }
