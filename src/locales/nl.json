@@ -14,6 +14,7 @@
       "borscht": {
         "title": "Borsjt",
         "description": "Een hartige en smaakvolle bietensoep, perfect voor elk seizoen.",
+        "image": "/borscht.jpg",
         "recipe": {
           "ingredients": [
             "Kleine varkensribbetjes of varkensvlees met bot",
@@ -43,6 +44,7 @@
       "progret": {
         "title": "Progret",
         "description": "Een lokale cakespecialiteit.",
+        "image": "/progret.png",
         "recipe": {
           "ingredients": [
             "Voor de cake:",

@@ -14,6 +14,7 @@
       "borscht": {
         "title": "Borscht",
         "description": "A hearty and flavorful beet soup, perfect for any season.",
+        "image": "/borscht.jpg",
         "recipe": {
           "ingredients": [
             "Pork small ribs or pork meat with bone",
@@ -43,6 +44,7 @@
       "progret": {
         "title": "Progret",
         "description": "A local cake speciality.",
+        "image": "/progret.png",
         "recipe": {
           "ingredients": [
             "For the cake:",

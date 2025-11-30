@@ -6,7 +6,7 @@ const getRecipes = () => {
     id,
     title: i18next.t(`recipes.${id}.title`),
     description: i18next.t(`recipes.${id}.description`),
-    imageUrl: id === 'progret' ? '/progret.png' : id === 'borscht' ? '/borscht.jpg' : `/${id}.jpg`,
+    imageUrl: i18next.t(`recipes.${id}.image`),
     ...i18next.t(`recipes.${id}.recipe`, { returnObjects: true }),
   }));
 };
@@ -16,7 +16,7 @@ export const getRecipe = (id) => {
     id,
     title: i18next.t(`recipes.${id}.title`),
     description: i18next.t(`recipes.${id}.description`),
-    imageUrl: id === 'progret' ? '/progret.png' : id === 'borscht' ? '/borscht.jpg' : `/${id}.jpg`,
+    imageUrl: i18next.t(`recipes.${id}.image`),
     ...i18next.t(`recipes.${id}.recipe`, { returnObjects: true }),
   };
 };
