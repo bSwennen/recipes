@@ -17,14 +17,7 @@ function Homepage() {
 
   return `
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h1 class="text-5xl font-extrabold text-gray-900 sm:text-6xl md:text-7xl">
-          ${i18next.t('homepage.title')}
-        </h1>
-        <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500 sm:text-xl md:mt-6 md:text-2xl">
-          ${i18next.t('homepage.description')}
-        </p>
-      </div>
+
       <div>
         <h2 class="text-4xl font-bold text-gray-800 mb-8">${i18next.t('recipes_title')}</h2>
         <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
