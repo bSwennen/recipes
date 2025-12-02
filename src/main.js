@@ -37,7 +37,7 @@ renderHeader();
 render();
 updateTitle();
 
-i18next.on('languageChanged', (lng) => {
+i18next.on('languageChanged', () => {
   render();
   renderHeader();
   updateTitle();
