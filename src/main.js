@@ -1,7 +1,7 @@
 import './style.css'
 import i18next from './i18n.js';
 import Homepage from './Homepage.js';
-import Recipe from './Recipe.js';
+import Recipe, { initRecipeModal } from './Recipe.js';
 import { getRecipe } from './recipes.js';
 import Header, { addHeaderListeners } from './Header.js';
 
@@ -23,6 +23,7 @@ const render = () => {
   if (hash) {
     const recipe = getRecipe(hash);
     app.innerHTML = Recipe(recipe);
+    setTimeout(initRecipeModal, 0);
   } else {
     app.innerHTML = Homepage();
   }

@@ -11,6 +11,7 @@
     "step": "Step {{count}}",
     "home": "Home",
     "recipes_title": "Our Recipes",
+    "viewOriginalRecipe": "View Original Recipe",
     "recipes": {
       "borscht": {
         "title": "Borscht",

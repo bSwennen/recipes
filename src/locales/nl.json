@@ -11,6 +11,7 @@
     "step": "Stap {{count}}",
     "home": "Home",
     "recipes_title": "Onze Recepten",
+    "viewOriginalRecipe": "Bekijk Origineel Recept",
     "recipes": {
       "borscht": {
         "title": "Borsjt",
