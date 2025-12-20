@@ -8,7 +8,7 @@ This document outlines the essential commands and code style guidelines for agen
 *   **Build Project:** `npm run build`
 *   **Preview Build:** `npm run preview`
 *   **Linting:** No explicit linting command is configured.
-*   **Testing:** No explicit testing framework is configured.
+*   **Testing:** `npm test` (runs all tests), `npm test -- <filename>` (runs single test file) - uses Vitest.
 
 ## 2. Code Style Guidelines
 
@@ -24,5 +24,13 @@ This document outlines the essential commands and code style guidelines for agen
     *   Components: `PascalCase` (e.g., `Header`, `Homepage`).
 *   **Error Handling:** Basic error handling is not explicitly implemented; rely on browser defaults for simple cases.
 
-## 3. Cursor/Copilot Rules
+## 3. Internationalization (i18n)
+*   **Framework:** Uses `i18next` for translations
+*   **Languages:** English (en) and Dutch (nl) supported
+*   **Translation Files:** Located in `src/locales/` (en.json, nl.json)
+*   **Usage:** Access translations via `i18next.t('key')` function
+*   **Structure:** Translation keys follow dot notation (e.g., `recipes.borscht.title`)
+*   **Language Switching:** Controlled via header buttons, default is Dutch ('nl')
+
+## 4. Cursor/Copilot Rules
 No specific Cursor or Copilot rules were found in this repository.
