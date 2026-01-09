@@ -31,6 +31,8 @@ function setActiveButton(lng) {
   }
 }
 
+let languageListenerAdded = false;
+
 export function addHeaderListeners() {
   document.getElementById('home').addEventListener('click', () => {
     window.location.hash = '';
@@ -44,9 +46,12 @@ export function addHeaderListeners() {
     i18next.changeLanguage('en');
   });
 
-  i18next.on('languageChanged', (lng) => {
-    setActiveButton(lng);
-  });
+  if (!languageListenerAdded) {
+    i18next.on('languageChanged', (lng) => {
+      setActiveButton(lng);
+    });
+    languageListenerAdded = true;
+  }
 
   setActiveButton(i18next.language);
 }
