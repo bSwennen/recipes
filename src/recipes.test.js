@@ -1,47 +1,74 @@
-import { expect, test } from 'vitest';
-import getRecipes, { getRecipe } from './recipes.js';
+import { expect, test, vi } from 'vitest';
 
-// Mock i18next for testing purposes
-const mockI18next = {
-  t: (key, options) => {
-    const translations = {
-      'recipes_title': 'Recipes',
-      'recipes.borscht.title': 'Borscht',
-      'recipes.borscht.description': 'A classic beet soup',
-      'recipes.borscht.image': './borscht.jpg',
-      'recipes.borscht.recipe.ingredients': ['beets', 'cabbage'],
-      'recipes.borscht.recipe.instructions': ['boil', 'serve'],
-      'recipes.borscht.recipe.servingSuggestion': 'with sour cream',
-      'recipes.borscht.recipe.proTip': 'add dill',
-      'recipes.progret.title': 'Progret',
-      'recipes.progret.description': 'A delicious stew',
-      'recipes.progret.image': './progret.png',
-      'recipes.progret.recipe.ingredients': ['meat', 'potatoes'],
-      'recipes.progret.recipe.instructions': ['chop', 'cook'],
-      'recipes.progret.recipe.servingSuggestion': 'with bread',
-      'recipes.progret.recipe.proTip': 'slow cook',
-    };
-
-    if (options && options.returnObjects) {
-      const parts = key.split('.');
-      let current = translations;
-      for (const part of parts) {
-        if (current && current[part]) {
-          current = current[part];
-        } else {
-          return {};
+vi.mock('./i18n.js', () => ({
+  default: {
+    t: (key, options) => {
+      const translations = {
+        'recipes_title': 'Recipes',
+        'recipes.borscht.title': 'Borsjt',
+        'recipes.borscht.description': 'A classic beet soup',
+        'recipes.borscht.image': '/borscht.jpg',
+        'recipes.borscht.recipe': {
+          ingredients: ['beets', 'cabbage'],
+          instructions: ['boil', 'serve'],
+          servingSuggestion: 'with sour cream',
+          proTip: 'add dill'
+        },
+        'recipes.progret.title': 'Progret',
+        'recipes.progret.description': 'A delicious stew',
+        'recipes.progret.image': '/progret.png',
+        'recipes.progret.recipe': {
+          ingredients: ['meat', 'potatoes'],
+          instructions: ['chop', 'cook'],
+          servingSuggestion: 'with bread',
+          proTip: 'slow cook'
+        },
+        'recipes': {
+          borscht: {
+            title: 'Borsjt',
+            description: 'A classic beet soup',
+            image: '/borscht.jpg',
+            recipe: {
+              ingredients: ['beets', 'cabbage'],
+              instructions: ['boil', 'serve'],
+              servingSuggestion: 'with sour cream',
+              proTip: 'add dill'
+            }
+          },
+          progret: {
+            title: 'Progret',
+            description: 'A delicious stew',
+            image: '/progret.png',
+            recipe: {
+              ingredients: ['meat', 'potatoes'],
+              instructions: ['chop', 'cook'],
+              servingSuggestion: 'with bread',
+              proTip: 'slow cook'
+            }
+          }
         }
-      }
-      return current;
-    }
-    return translations[key] || key;
-  },
-};
+      };
 
-// Manually inject the mock into the module that uses i18next
-// This is a simplified approach; for more complex scenarios, consider a dedicated mocking library
-import * as recipesModule from './recipes.js';
-recipesModule.i18next = mockI18next;
+      if (options && options.returnObjects) {
+        const parts = key.split('.');
+        let current = translations;
+        for (const part of parts) {
+          if (current && current[part]) {
+            current = current[part];
+          } else {
+            return {};
+          }
+        }
+        return current;
+      }
+      return translations[key] || key;
+    },
+    language: 'nl',
+    on: vi.fn()
+  }
+}));
+
+import getRecipes, { getRecipe } from './recipes.js';
 
 test('getRecipes returns a list of recipes', () => {
   const recipes = getRecipes();
