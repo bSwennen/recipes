@@ -31,49 +31,4 @@ function Header(isHomePage) {
   `;
 }
 
-function setActiveButton(lng) {
-  const nlButton = document.getElementById('lang-nl');
-  const enButton = document.getElementById('lang-en');
-  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-
-  if (lng === 'nl') {
-    nlButton.classList.add('font-bold');
-    nlButton.classList.add(isDark ? 'text-white' : 'text-gray-900');
-    enButton.classList.remove('font-bold', 'text-gray-900', 'text-white');
-  } else {
-    enButton.classList.add('font-bold');
-    enButton.classList.add(isDark ? 'text-white' : 'text-gray-900');
-    nlButton.classList.remove('font-bold', 'text-gray-900', 'text-white');
-  }
-}
-
-let languageListenerAdded = false;
-
-export function addHeaderListeners() {
-  document.getElementById('home').addEventListener('click', () => {
-    window.location.hash = '';
-  });
-
-  document.getElementById('lang-nl').addEventListener('click', () => {
-    i18next.changeLanguage('nl');
-  });
-
-  document.getElementById('lang-en').addEventListener('click', () => {
-    i18next.changeLanguage('en');
-  });
-
-  document.getElementById('theme-toggle').addEventListener('click', () => {
-    window.dispatchEvent(new CustomEvent('themeToggleRequest'));
-  });
-
-  if (!languageListenerAdded) {
-    i18next.on('languageChanged', (lng) => {
-      setActiveButton(lng);
-    });
-    languageListenerAdded = true;
-  }
-
-  setActiveButton(i18next.language);
-}
-
 export default Header;
