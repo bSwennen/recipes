@@ -1,5 +1,7 @@
 # Recipes App
 
+![Tests](https://github.com/bSwennen/recipes/actions/workflows/test.yml/badge.svg)
+
 This is a simple, single-page web application for displaying recipes. It is built with vanilla JavaScript, using Vite for the development server and build tooling, and Tailwind CSS for styling. The application now supports dynamic titles and translated "Home" button based on the selected language (English or Dutch).
 
 ## Building and Running
